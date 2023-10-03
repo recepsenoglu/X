@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		CE015BBB2ABD785600E560D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE015BBA2ABD785600E560D1 /* AppDelegate.swift */; };
 		CE015BBD2ABD785600E560D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE015BBC2ABD785600E560D1 /* SceneDelegate.swift */; };
-		CE015BBF2ABD785600E560D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE015BBE2ABD785600E560D1 /* ViewController.swift */; };
+		CE015BBF2ABD785600E560D1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE015BBE2ABD785600E560D1 /* HomeVC.swift */; };
 		CE015BC22ABD785600E560D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE015BC02ABD785600E560D1 /* Main.storyboard */; };
 		CE015BC42ABD785800E560D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE015BC32ABD785800E560D1 /* Assets.xcassets */; };
 		CE015BC72ABD785800E560D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE015BC52ABD785800E560D1 /* LaunchScreen.storyboard */; };
+		CEA709C32ACBF3A60071F930 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C22ACBF3A60071F930 /* Post.swift */; };
+		CEA709C52ACBF5420071F930 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C42ACBF5420071F930 /* User.swift */; };
+		CEA709CA2ACC00860071F930 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C82ACC00860071F930 /* PostTVC.swift */; };
+		CEA709CB2ACC00860071F930 /* PostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA709C92ACC00860071F930 /* PostTVC.xib */; };
+		CEA709D22ACC02310071F930 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709D12ACC02310071F930 /* HeaderView.swift */; };
+		CEA709D42ACC02460071F930 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA709D32ACC02460071F930 /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE015BB72ABD785600E560D1 /* X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE015BBA2ABD785600E560D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE015BBC2ABD785600E560D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE015BBE2ABD785600E560D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE015BBE2ABD785600E560D1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CE015BC12ABD785600E560D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE015BC32ABD785800E560D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE015BC62ABD785800E560D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE015BC82ABD785800E560D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA709C22ACBF3A60071F930 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CEA709C42ACBF5420071F930 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CEA709C82ACC00860071F930 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
+		CEA709C92ACC00860071F930 /* PostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTVC.xib; sourceTree = "<group>"; };
+		CEA709D12ACC02310071F930 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CEA709D32ACC02460071F930 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		CE015BB92ABD785600E560D1 /* X */ = {
 			isa = PBXGroup;
 			children = (
+				CEA709C62ACC00560071F930 /* Nib */,
+				CEA709C12ACBF3830071F930 /* Model */,
+				CE3FF47F2ACBE42700BAB441 /* View */,
 				CE015BBA2ABD785600E560D1 /* AppDelegate.swift */,
 				CE015BBC2ABD785600E560D1 /* SceneDelegate.swift */,
-				CE015BBE2ABD785600E560D1 /* ViewController.swift */,
 				CE015BC02ABD785600E560D1 /* Main.storyboard */,
 				CE015BC32ABD785800E560D1 /* Assets.xcassets */,
 				CE015BC52ABD785800E560D1 /* LaunchScreen.storyboard */,
 				CE015BC82ABD785800E560D1 /* Info.plist */,
 			);
 			path = X;
+			sourceTree = "<group>";
+		};
+		CE3FF47F2ACBE42700BAB441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE015BBE2ABD785600E560D1 /* HomeVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA709C12ACBF3830071F930 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA709C22ACBF3A60071F930 /* Post.swift */,
+				CEA709C42ACBF5420071F930 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA709C62ACC00560071F930 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				CEA709CC2ACC01600071F930 /* HeaderReusableView */,
+				CEA709C72ACC00650071F930 /* PostTVC */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		CEA709C72ACC00650071F930 /* PostTVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEA709C82ACC00860071F930 /* PostTVC.swift */,
+				CEA709C92ACC00860071F930 /* PostTVC.xib */,
+			);
+			path = PostTVC;
+			sourceTree = "<group>";
+		};
+		CEA709CC2ACC01600071F930 /* HeaderReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				CEA709D12ACC02310071F930 /* HeaderView.swift */,
+				CEA709D32ACC02460071F930 /* HeaderView.xib */,
+			);
+			path = HeaderReusableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +153,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					CE015BB62ABD785600E560D1 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -126,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE015BC72ABD785800E560D1 /* LaunchScreen.storyboard in Resources */,
+				CEA709D42ACC02460071F930 /* HeaderView.xib in Resources */,
 				CE015BC42ABD785800E560D1 /* Assets.xcassets in Resources */,
 				CE015BC22ABD785600E560D1 /* Main.storyboard in Resources */,
+				CEA709CB2ACC00860071F930 /* PostTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE015BBF2ABD785600E560D1 /* ViewController.swift in Sources */,
+				CE015BBF2ABD785600E560D1 /* HomeVC.swift in Sources */,
+				CEA709CA2ACC00860071F930 /* PostTVC.swift in Sources */,
+				CEA709C32ACBF3A60071F930 /* Post.swift in Sources */,
 				CE015BBB2ABD785600E560D1 /* AppDelegate.swift in Sources */,
+				CEA709C52ACBF5420071F930 /* User.swift in Sources */,
 				CE015BBD2ABD785600E560D1 /* SceneDelegate.swift in Sources */,
+				CEA709D22ACC02310071F930 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +266,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -262,6 +327,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
