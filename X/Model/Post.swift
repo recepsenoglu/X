@@ -17,11 +17,13 @@ struct Post {
     var viewsCount: String
     var text: String?
     var image: UIImage?
+    var reposterName: String?
     
     var hasText: Bool { get { text != nil }}
     var hasImage: Bool { get { image != nil }}
+    var hasReposter: Bool { get { reposterName != nil }}
     
-    init(user: User, postAge: String, commentsCount: Int, repostsCount: Int, likesCount: Int, viewsCount: Int, text: String? = nil, image: String? = nil) {
+    init(user: User, postAge: String, commentsCount: Int, repostsCount: Int, likesCount: Int, viewsCount: Int, text: String? = nil, image: String? = nil, reposterame: String? = nil) {
         self.user = user
         self.postAge = postAge
         self.commentsCount = String(commentsCount)
@@ -30,5 +32,6 @@ struct Post {
         self.viewsCount = String(viewsCount)
         self.text = text
         self.image = image != nil ? UIImage(named: image!) ?? nil : nil
+        self.reposterName = reposterame
     }
 }

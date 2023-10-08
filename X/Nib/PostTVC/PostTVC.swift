@@ -22,6 +22,8 @@ class PostTVC: UITableViewCell {
     @IBOutlet weak private var repostsCountLabel: UILabel!
     @IBOutlet weak private var likesCountLabel: UILabel!
     @IBOutlet weak private var viewsCountLabel: UILabel!
+    @IBOutlet weak private var repostedLabel: UILabel!
+    @IBOutlet weak private var repostImageView: UIImageView!
     
     // MARK: - Functions
     
@@ -30,12 +32,26 @@ class PostTVC: UITableViewCell {
         nameLabel.text = post.user.name
         verifiedView.isHidden = !post.user.isVerified
         usernameLabel.text = post.user.username
-        postAgeLabel.text = post.postAge
+        postAgeLabel.text = " ·\(post.postAge)"
         commentsCountLabel.text = post.commentsCount
         repostsCountLabel.text = post.repostsCount
         likesCountLabel.text = post.likesCount
         viewsCountLabel.text = post.viewsCount
-        postTextLabel.text = post.text
-        postImageView.image = post.image
+        if post.hasText {
+            postTextLabel.text = post.text
+        } else {
+            postTextLabel.isHidden = true
+        }
+        if post.hasImage {
+            postImageView.image = post.image
+        } else {
+            postImageView.isHidden = true
+        }
+        if post.hasReposter {
+            repostedLabel.text = "\(post.reposterName!) reposted"
+        } else { 
+            repostImageView.isHidden = true
+            repostedLabel.isHidden = true
+        }
     }
 }

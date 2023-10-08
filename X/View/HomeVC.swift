@@ -29,7 +29,7 @@ final class HomeVC: UIViewController {
     private func loadPosts() {
         let users = getUsers()
         posts.append(contentsOf: [
-        Post(user: users[0], postAge: "1m", commentsCount: 4, repostsCount: 0, likesCount: 1, viewsCount: 42, text: "Hello World!"),
+        Post(user: users[0], postAge: "1m", commentsCount: 4, repostsCount: 0, likesCount: 1, viewsCount: 42, text: "Hello World!", reposterame: "Elon"),
         Post(user: users[1], postAge: "25m", commentsCount: 12, repostsCount: 2, likesCount: 82, viewsCount: 243, text: "Check out my new profile picture!", image: "user2"),
         Post(user: users[2], postAge: "1d", commentsCount: 420, repostsCount: 23, likesCount: 2543, viewsCount: 9683, image: "user3"),
         Post(user: users[3], postAge: "3h", commentsCount: 114, repostsCount: 8, likesCount: 1345, viewsCount: 4765, text: "Welcome to the league of legends champion spotlight. Featuring: Ashe, The Frost Archer!")
