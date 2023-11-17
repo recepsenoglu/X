@@ -44,6 +44,9 @@ class PostTVC: UITableViewCell {
         }
         if post.hasImage {
             postImageView.image = post.image
+            NSLayoutConstraint.activate([
+                postImageView.heightAnchor.constraint(equalToConstant: 300)
+            ])
         } else {
             postImageView.isHidden = true
         }

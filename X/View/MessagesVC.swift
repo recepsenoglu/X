@@ -32,20 +32,20 @@ final class MessagesVC: UIViewController {
     func loadMessages() {
         let users = getUsers()
         messages.append(contentsOf: [
-            Message(user: users[0], lastMessage: "Message Text Message Text Message Text Message Text Message Text Message Text Message Text Message Text Message Text ", lastMessageAge: "1h"),
-            Message(user: users[1], lastMessage: "Message Text Message Text Message Text Message Text Message Text Message Text Message Text Message Text Message Text ", lastMessageAge: "3d"),
-            Message(user: users[2], lastMessage: "Message Text Message Text Message Text Message Text Message Text Message Text Message Text Message Text Message Text ", lastMessageAge: "1w"),
-            Message(user: users[3], lastMessage: "Message Text Message Text Message Text Message Text Message Text Message Text Message Text Message Text Message Text ", lastMessageAge: "4h")
+            Message(user: users[0], lastMessage: "Başarılarının devamını dilerim kardeşim. Hadi allaha emanet ol", lastMessageAge: "1h"),
+            Message(user: users[1], lastMessage: "So, what do you think about it?", lastMessageAge: "3d"),
+            Message(user: users[2], lastMessage: "Thank you :)", lastMessageAge: "1w"),
+            Message(user: users[3], lastMessage: "really good song btw", lastMessageAge: "4h")
         ])
         filteredMessages.append(contentsOf: messages)
     }
     
     private func getUsers() -> [User] {
         return [
-        User(image: "user1", name: "John Locke", username: "jondoe34", isVerified: false),
-        User(image: "user2", name: "Harry Marbles", username: "harryMrbls.1", isVerified: true),
-        User(image: "user3", name: "Jack Smitheren", username: "smithJac44445678", isVerified: true),
-        User(image: "user4", name: "Aiden Xerath", username: "aio0031", isVerified: false),
+        User(image: "noname", name: "Name cannot be blanked", username: "recSkywalker", isVerified: false),
+        User(image: "Homelander", name: "ex Homelander", username: "homelander", isVerified: true),
+        User(image: "assala", name: "Assala", username: "assala23", isVerified: true),
+        User(image: "recep3", name: "New person", username: "sameOldMistakes", isVerified: false),
         ]
     }
 }

@@ -29,19 +29,23 @@ final class HomeVC: UIViewController {
     private func loadPosts() {
         let users = getUsers()
         posts.append(contentsOf: [
-        Post(user: users[0], postAge: "1m", commentsCount: 4, repostsCount: 0, likesCount: 1, viewsCount: 42, text: "Hello World!", reposterame: "Elon"),
-        Post(user: users[1], postAge: "25m", commentsCount: 12, repostsCount: 2, likesCount: 82, viewsCount: 243, text: "Check out my new profile picture!", image: "user2"),
-        Post(user: users[2], postAge: "1d", commentsCount: 420, repostsCount: 23, likesCount: 2543, viewsCount: 9683, image: "user3"),
-        Post(user: users[3], postAge: "3h", commentsCount: 114, repostsCount: 8, likesCount: 1345, viewsCount: 4765, text: "Welcome to the league of legends champion spotlight. Featuring: Ashe, The Frost Archer!")
+        Post(user: users[0], postAge: "2m", commentsCount: 4, repostsCount: 2, likesCount: 0, viewsCount: 666, text: "Hello X!", reposterame: "Elon Musk"),
+        Post(user: users[1], postAge: "1h", commentsCount: 42, repostsCount: 12, likesCount: 389, viewsCount: 835, image: "AssalaPost"),
+        Post(user: users[2], postAge: "4h", commentsCount: 1, repostsCount: 0, likesCount: 1, viewsCount: 10, text: "Did anyone see a guy with a trench-coat?"),
+        Post(user: users[4], postAge: "1d", commentsCount: 121, repostsCount: 70, likesCount: 600, viewsCount: 1923, text: "The nevest member of the 7: Turklander!", image: "Homelander", reposterame: "Recep"),
+        Post(user: users[3], postAge: "12h", commentsCount: 12, repostsCount: 4, likesCount: 45, viewsCount: 261, text: "I missed 2021..."),
+        Post(user: users[5], postAge: "4d", commentsCount: 0, repostsCount: 0, likesCount: 1, viewsCount: 12, text: "Hey. Just signed up"),
         ])
     }
     
     private func getUsers() -> [User] {
         return [
-        User(image: "user1", name: "John Locke", username: "jondoe34", isVerified: false),
-        User(image: "user2", name: "Harry Marbles", username: "harryMrbls.1", isVerified: true),
-        User(image: "user3", name: "Jack Smitheren", username: "smithJac44444", isVerified: true),
-        User(image: "user4", name: "Aiden Xerath", username: "aio0031", isVerified: false),
+        User(image: "recep", name: "Recep Senoglu", username: "eatsand", isVerified: true),
+        User(image: "assala", name: "Assala Dhouioui", username: "pothead23", isVerified: true),
+        User(image: "recep2", name: "Jon Smith", username: "root010101", isVerified: false),
+        User(image: "recep3", name: "It's me again", username: "jesse.pinkman", isVerified: false),
+        User(image: "vought", name: "Vought International", username: "vought", isVerified: true),
+        User(image: "recep4", name: "Hozho", username: "hozho444", isVerified: false),
         ]
     }
 }
