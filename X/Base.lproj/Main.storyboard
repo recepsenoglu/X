@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,32 +13,98 @@
         <!--Messages-->
         <scene sceneID="A3Q-BP-arY">
             <objects>
-                <viewController id="geP-ql-6gQ" sceneMemberID="viewController">
+                <viewController id="geP-ql-6gQ" customClass="MessagesVC" customModule="X" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5df-IL-7s4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-BX-bHF" customClass="HeaderView" customModule="X" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyI-gc-LQp">
                                 <rect key="frame" x="16" y="59" width="361" height="34"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="ff0-Yk-unM">
+                                        <rect key="frame" x="0.0" y="3.3333333333333339" width="27.333333333333332" height="27.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ff0-Yk-unM" secondAttribute="height" id="2Jq-hZ-hEC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="13.6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIr-Gg-hrN">
+                                        <rect key="frame" x="141" y="6.6666666666666714" width="79" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lm7-mr-XZ2">
+                                        <rect key="frame" x="337.33333333333331" y="6.3333333333333304" width="23.666666666666686" height="21.666666666666671"/>
+                                        <imageReference key="image" image="ellipsis" catalog="system" renderingMode="hierarchical">
+                                            <hierarchicalColors>
+                                                <color systemColor="labelColor"/>
+                                                <color systemColor="secondaryLabelColor"/>
+                                                <color systemColor="tertiaryLabelColor"/>
+                                            </hierarchicalColors>
+                                        </imageReference>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="gAC-wi-hQy"/>
+                                    <constraint firstItem="Lm7-mr-XZ2" firstAttribute="centerY" secondItem="gIr-Gg-hrN" secondAttribute="centerY" id="0jW-fL-xMf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lm7-mr-XZ2" secondAttribute="trailing" id="2D2-bh-Npx"/>
+                                    <constraint firstAttribute="height" constant="34" id="HgS-ex-pAA"/>
+                                    <constraint firstItem="gIr-Gg-hrN" firstAttribute="centerY" secondItem="CyI-gc-LQp" secondAttribute="centerY" id="HoZ-Xm-0Bk"/>
+                                    <constraint firstItem="gIr-Gg-hrN" firstAttribute="centerX" secondItem="CyI-gc-LQp" secondAttribute="centerX" id="dDo-JA-kdm"/>
+                                    <constraint firstItem="ff0-Yk-unM" firstAttribute="height" secondItem="CyI-gc-LQp" secondAttribute="height" multiplier="0.8" id="hZ9-nc-JvN"/>
+                                    <constraint firstItem="ff0-Yk-unM" firstAttribute="leading" secondItem="CyI-gc-LQp" secondAttribute="leading" id="vjJ-lq-r6f"/>
+                                    <constraint firstItem="ff0-Yk-unM" firstAttribute="centerY" secondItem="CyI-gc-LQp" secondAttribute="centerY" id="y5Z-9Z-boM"/>
+                                    <constraint firstItem="Lm7-mr-XZ2" firstAttribute="height" secondItem="CyI-gc-LQp" secondAttribute="height" id="zg7-lQ-070"/>
                                 </constraints>
                             </view>
+                            <searchBar contentMode="redraw" placeholder="Search Direct Messages" translatesAutoresizingMaskIntoConstraints="NO" id="My6-ZE-d1W">
+                                <rect key="frame" x="16" y="93" width="361" height="56"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="geP-ql-6gQ" id="s1z-QU-q1o"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bse-UN-DWl">
+                                <rect key="frame" x="16" y="149" width="361" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="geP-ql-6gQ" id="Scv-Vw-DhA"/>
+                                    <outlet property="delegate" destination="geP-ql-6gQ" id="j9u-zd-bH5"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a75-FU-5uT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="a75-FU-5uT" firstAttribute="trailing" secondItem="vmQ-BX-bHF" secondAttribute="trailing" constant="16" id="Jha-cl-Olv"/>
-                            <constraint firstItem="vmQ-BX-bHF" firstAttribute="top" secondItem="a75-FU-5uT" secondAttribute="top" id="TeS-SS-hvZ"/>
-                            <constraint firstItem="vmQ-BX-bHF" firstAttribute="leading" secondItem="a75-FU-5uT" secondAttribute="leading" constant="16" id="U7X-X1-cc4"/>
+                            <constraint firstItem="a75-FU-5uT" firstAttribute="trailing" secondItem="CyI-gc-LQp" secondAttribute="trailing" constant="16" id="1o2-UV-fbR"/>
+                            <constraint firstItem="My6-ZE-d1W" firstAttribute="top" secondItem="CyI-gc-LQp" secondAttribute="bottom" id="DIx-Ka-b4O"/>
+                            <constraint firstItem="My6-ZE-d1W" firstAttribute="trailing" secondItem="CyI-gc-LQp" secondAttribute="trailing" id="MsX-kh-lFo"/>
+                            <constraint firstItem="My6-ZE-d1W" firstAttribute="leading" secondItem="CyI-gc-LQp" secondAttribute="leading" id="X86-81-xST"/>
+                            <constraint firstItem="CyI-gc-LQp" firstAttribute="top" secondItem="a75-FU-5uT" secondAttribute="top" id="oNR-dh-k0U"/>
+                            <constraint firstItem="CyI-gc-LQp" firstAttribute="leading" secondItem="a75-FU-5uT" secondAttribute="leading" constant="16" id="pwL-Ke-WKb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Messages" image="envelope" catalog="system" selectedImage="envelope.fill" id="uah-VC-qji"/>
+                    <connections>
+                        <outlet property="messagesTV" destination="Bse-UN-DWl" id="V5O-YQ-4c8"/>
+                        <outlet property="searchBar" destination="My6-ZE-d1W" id="dfe-pT-Jjn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zM0-bC-Nty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2688" y="385"/>
+            <point key="canvasLocation" x="2687.7862595419847" y="384.50704225352115"/>
         </scene>
         <!--Home-->
         <scene sceneID="ePj-PO-hnd">
@@ -55,11 +122,34 @@
                                     <outlet property="delegate" destination="qWg-we-ead" id="B23-Yk-mEX"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsJ-vs-09k" customClass="HeaderView" customModule="X" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsJ-vs-09k">
                                 <rect key="frame" x="16" y="59" width="361" height="34"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="1Nq-HO-KhA">
+                                        <rect key="frame" x="0.0" y="3.3333333333333339" width="27.333333333333332" height="27.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1Nq-HO-KhA" secondAttribute="height" id="AZS-A7-gV1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="13.6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="EPQ-DW-hiw">
+                                        <rect key="frame" x="167" y="3.3333333333333339" width="27" height="27.333333333333329"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="EPQ-DW-hiw" firstAttribute="height" secondItem="1Nq-HO-KhA" secondAttribute="height" id="DFg-MY-TRC"/>
                                     <constraint firstAttribute="height" constant="34" id="FmF-lb-y7Z"/>
+                                    <constraint firstItem="EPQ-DW-hiw" firstAttribute="width" secondItem="1Nq-HO-KhA" secondAttribute="height" multiplier="1:1" id="KZ0-AM-byN"/>
+                                    <constraint firstItem="1Nq-HO-KhA" firstAttribute="height" secondItem="PsJ-vs-09k" secondAttribute="height" multiplier="0.8" id="b7Z-3b-TlO"/>
+                                    <constraint firstItem="EPQ-DW-hiw" firstAttribute="centerY" secondItem="1Nq-HO-KhA" secondAttribute="centerY" id="cXK-04-u6b"/>
+                                    <constraint firstItem="1Nq-HO-KhA" firstAttribute="leading" secondItem="PsJ-vs-09k" secondAttribute="leading" id="n4o-Hc-28C"/>
+                                    <constraint firstItem="1Nq-HO-KhA" firstAttribute="centerY" secondItem="PsJ-vs-09k" secondAttribute="centerY" id="qJF-uC-SKg"/>
+                                    <constraint firstItem="EPQ-DW-hiw" firstAttribute="centerX" secondItem="PsJ-vs-09k" secondAttribute="centerX" id="tRq-In-7S4"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -104,12 +194,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="338.66665649414062" height="317.33334350585938"/>
+        <image name="ProfilePhoto" width="533.33331298828125" height="355.33334350585938"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="envelope" catalog="system" width="128" height="85"/>
         <image name="envelope.fill" catalog="system" width="128" height="85"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

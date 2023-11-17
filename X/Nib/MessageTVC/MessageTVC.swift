@@ -8,16 +8,26 @@
 import UIKit
 
 class MessageTVC: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+    // MARK: - Outlets
+    
+    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var verifiedImageView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var postAgeLabel: UILabel!
+    
+
+    // MARK: - Functions
+    
+    func setup(_ message: Message) {
+        let user = message.user
+        userImageView.image = user.image
+        messageLabel.text = message.lastMessage
+        nameLabel.text = user.name
+        usernameLabel.text = user.username
+        postAgeLabel.text = "·\(message.lastMessageAge)"
+        verifiedImageView.isHidden = !user.isVerified
+    }
 }

@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct Message {
+    var user: User
+    var lastMessage: String
+    var lastMessageAge: String
+    
+    init(user: User, lastMessage: String, lastMessageAge: String) {
+        self.user = user
+        self.lastMessage = lastMessage
+        self.lastMessageAge = lastMessageAge
+    }
+}

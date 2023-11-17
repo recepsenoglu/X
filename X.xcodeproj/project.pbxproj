@@ -13,12 +13,14 @@
 		CE015BC22ABD785600E560D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE015BC02ABD785600E560D1 /* Main.storyboard */; };
 		CE015BC42ABD785800E560D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE015BC32ABD785800E560D1 /* Assets.xcassets */; };
 		CE015BC72ABD785800E560D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE015BC52ABD785800E560D1 /* LaunchScreen.storyboard */; };
+		CE440E622AD40FF900F99243 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE440E612AD40FF900F99243 /* MessagesVC.swift */; };
+		CE440E642AD410F700F99243 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE440E632AD410F700F99243 /* Message.swift */; };
+		CE440E682AD4128C00F99243 /* MessageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE440E662AD4128C00F99243 /* MessageTVC.swift */; };
+		CE440E692AD4128C00F99243 /* MessageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE440E672AD4128C00F99243 /* MessageTVC.xib */; };
 		CEA709C32ACBF3A60071F930 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C22ACBF3A60071F930 /* Post.swift */; };
 		CEA709C52ACBF5420071F930 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C42ACBF5420071F930 /* User.swift */; };
 		CEA709CA2ACC00860071F930 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C82ACC00860071F930 /* PostTVC.swift */; };
 		CEA709CB2ACC00860071F930 /* PostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA709C92ACC00860071F930 /* PostTVC.xib */; };
-		CEA709D22ACC02310071F930 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709D12ACC02310071F930 /* HeaderView.swift */; };
-		CEA709D42ACC02460071F930 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA709D32ACC02460071F930 /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +32,14 @@
 		CE015BC32ABD785800E560D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE015BC62ABD785800E560D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE015BC82ABD785800E560D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE440E612AD40FF900F99243 /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		CE440E632AD410F700F99243 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CE440E662AD4128C00F99243 /* MessageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTVC.swift; sourceTree = "<group>"; };
+		CE440E672AD4128C00F99243 /* MessageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTVC.xib; sourceTree = "<group>"; };
 		CEA709C22ACBF3A60071F930 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CEA709C42ACBF5420071F930 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEA709C82ACC00860071F930 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
 		CEA709C92ACC00860071F930 /* PostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTVC.xib; sourceTree = "<group>"; };
-		CEA709D12ACC02310071F930 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		CEA709D32ACC02460071F930 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +89,18 @@
 			isa = PBXGroup;
 			children = (
 				CE015BBE2ABD785600E560D1 /* HomeVC.swift */,
+				CE440E612AD40FF900F99243 /* MessagesVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE440E652AD4126600F99243 /* MessageTVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE440E662AD4128C00F99243 /* MessageTVC.swift */,
+				CE440E672AD4128C00F99243 /* MessageTVC.xib */,
+			);
+			path = MessageTVC;
 			sourceTree = "<group>";
 		};
 		CEA709C12ACBF3830071F930 /* Model */ = {
@@ -94,6 +108,7 @@
 			children = (
 				CEA709C22ACBF3A60071F930 /* Post.swift */,
 				CEA709C42ACBF5420071F930 /* User.swift */,
+				CE440E632AD410F700F99243 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,7 +116,7 @@
 		CEA709C62ACC00560071F930 /* Nib */ = {
 			isa = PBXGroup;
 			children = (
-				CEA709CC2ACC01600071F930 /* HeaderReusableView */,
+				CE440E652AD4126600F99243 /* MessageTVC */,
 				CEA709C72ACC00650071F930 /* PostTVC */,
 			);
 			path = Nib;
@@ -114,15 +129,6 @@
 				CEA709C92ACC00860071F930 /* PostTVC.xib */,
 			);
 			path = PostTVC;
-			sourceTree = "<group>";
-		};
-		CEA709CC2ACC01600071F930 /* HeaderReusableView */ = {
-			isa = PBXGroup;
-			children = (
-				CEA709D12ACC02310071F930 /* HeaderView.swift */,
-				CEA709D32ACC02460071F930 /* HeaderView.xib */,
-			);
-			path = HeaderReusableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE015BC72ABD785800E560D1 /* LaunchScreen.storyboard in Resources */,
-				CEA709D42ACC02460071F930 /* HeaderView.xib in Resources */,
+				CE440E692AD4128C00F99243 /* MessageTVC.xib in Resources */,
 				CE015BC42ABD785800E560D1 /* Assets.xcassets in Resources */,
 				CE015BC22ABD785600E560D1 /* Main.storyboard in Resources */,
 				CEA709CB2ACC00860071F930 /* PostTVC.xib in Resources */,
@@ -201,10 +207,12 @@
 				CE015BBF2ABD785600E560D1 /* HomeVC.swift in Sources */,
 				CEA709CA2ACC00860071F930 /* PostTVC.swift in Sources */,
 				CEA709C32ACBF3A60071F930 /* Post.swift in Sources */,
+				CE440E642AD410F700F99243 /* Message.swift in Sources */,
 				CE015BBB2ABD785600E560D1 /* AppDelegate.swift in Sources */,
+				CE440E622AD40FF900F99243 /* MessagesVC.swift in Sources */,
 				CEA709C52ACBF5420071F930 /* User.swift in Sources */,
 				CE015BBD2ABD785600E560D1 /* SceneDelegate.swift in Sources */,
-				CEA709D22ACC02310071F930 /* HeaderView.swift in Sources */,
+				CE440E682AD4128C00F99243 /* MessageTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
