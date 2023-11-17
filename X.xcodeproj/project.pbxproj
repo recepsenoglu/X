@@ -17,6 +17,7 @@
 		CE440E642AD410F700F99243 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE440E632AD410F700F99243 /* Message.swift */; };
 		CE440E682AD4128C00F99243 /* MessageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE440E662AD4128C00F99243 /* MessageTVC.swift */; };
 		CE440E692AD4128C00F99243 /* MessageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE440E672AD4128C00F99243 /* MessageTVC.xib */; };
+		CE7CF5422B07A29D00FEA332 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CF5412B07A29D00FEA332 /* TabBarController.swift */; };
 		CEA709C32ACBF3A60071F930 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C22ACBF3A60071F930 /* Post.swift */; };
 		CEA709C52ACBF5420071F930 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C42ACBF5420071F930 /* User.swift */; };
 		CEA709CA2ACC00860071F930 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA709C82ACC00860071F930 /* PostTVC.swift */; };
@@ -36,6 +37,7 @@
 		CE440E632AD410F700F99243 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CE440E662AD4128C00F99243 /* MessageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTVC.swift; sourceTree = "<group>"; };
 		CE440E672AD4128C00F99243 /* MessageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTVC.xib; sourceTree = "<group>"; };
+		CE7CF5412B07A29D00FEA332 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CEA709C22ACBF3A60071F930 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CEA709C42ACBF5420071F930 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEA709C82ACC00860071F930 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 			path = MessageTVC;
 			sourceTree = "<group>";
 		};
+		CE7CF5402B07A27400FEA332 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CF5412B07A29D00FEA332 /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		CEA709C12ACBF3830071F930 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		CEA709C62ACC00560071F930 /* Nib */ = {
 			isa = PBXGroup;
 			children = (
+				CE7CF5402B07A27400FEA332 /* TabBarController */,
 				CE440E652AD4126600F99243 /* MessageTVC */,
 				CEA709C72ACC00650071F930 /* PostTVC */,
 			);
@@ -207,6 +218,7 @@
 				CE015BBF2ABD785600E560D1 /* HomeVC.swift in Sources */,
 				CEA709CA2ACC00860071F930 /* PostTVC.swift in Sources */,
 				CEA709C32ACBF3A60071F930 /* Post.swift in Sources */,
+				CE7CF5422B07A29D00FEA332 /* TabBarController.swift in Sources */,
 				CE440E642AD410F700F99243 /* Message.swift in Sources */,
 				CE015BBB2ABD785600E560D1 /* AppDelegate.swift in Sources */,
 				CE440E622AD40FF900F99243 /* MessagesVC.swift in Sources */,
