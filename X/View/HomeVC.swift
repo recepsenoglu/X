@@ -32,7 +32,7 @@ final class HomeVC: UIViewController {
         Post(user: users[0], postAge: "2m", commentsCount: 4, repostsCount: 2, likesCount: 0, viewsCount: 666, text: "Hello X!", reposterame: "Elon Musk"),
         Post(user: users[1], postAge: "1h", commentsCount: 42, repostsCount: 12, likesCount: 389, viewsCount: 835, image: "AssalaPost"),
         Post(user: users[2], postAge: "4h", commentsCount: 1, repostsCount: 0, likesCount: 1, viewsCount: 10, text: "Did anyone see a guy with a trench-coat?"),
-        Post(user: users[4], postAge: "1d", commentsCount: 121, repostsCount: 70, likesCount: 600, viewsCount: 1923, text: "The nevest member of the 7: Turklander!", image: "Homelander", reposterame: "Recep"),
+        Post(user: users[4], postAge: "1d", commentsCount: 121, repostsCount: 70, likesCount: 600, viewsCount: 1923, text: "The nevest member of the 7:\nTurklander!", image: "Homelander", reposterame: "Recep"),
         Post(user: users[3], postAge: "12h", commentsCount: 12, repostsCount: 4, likesCount: 45, viewsCount: 261, text: "I missed 2021..."),
         Post(user: users[5], postAge: "4d", commentsCount: 0, repostsCount: 0, likesCount: 1, viewsCount: 12, text: "Hey. Just signed up"),
         ])

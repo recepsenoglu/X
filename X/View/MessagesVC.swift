@@ -33,9 +33,10 @@ final class MessagesVC: UIViewController {
         let users = getUsers()
         messages.append(contentsOf: [
             Message(user: users[0], lastMessage: "Başarılarının devamını dilerim kardeşim. Hadi allaha emanet ol", lastMessageAge: "1h"),
-            Message(user: users[1], lastMessage: "So, what do you think about it?", lastMessageAge: "3d"),
-            Message(user: users[2], lastMessage: "Thank you :)", lastMessageAge: "1w"),
-            Message(user: users[3], lastMessage: "really good song btw", lastMessageAge: "4h")
+            Message(user: users[1], lastMessage: "So, what do you think about it?\n", lastMessageAge: "3h"),
+            Message(user: users[2], lastMessage: "Thank you :)\n", lastMessageAge: "1d"),
+            Message(user: users[3], lastMessage: "really good song btw\n", lastMessageAge: "3d"),
+            Message(user: users[4], lastMessage: "buy crypto coins\n", lastMessageAge: "1w")
         ])
         filteredMessages.append(contentsOf: messages)
     }
@@ -46,6 +47,7 @@ final class MessagesVC: UIViewController {
         User(image: "Homelander", name: "ex Homelander", username: "homelander", isVerified: true),
         User(image: "assala", name: "Assala", username: "assala23", isVerified: true),
         User(image: "recep3", name: "New person", username: "sameOldMistakes", isVerified: false),
+        User(image: "doge", name: "Doge", username: "doge", isVerified: true)
         ]
     }
 }
