@@ -38,6 +38,7 @@
 		CE440E662AD4128C00F99243 /* MessageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTVC.swift; sourceTree = "<group>"; };
 		CE440E672AD4128C00F99243 /* MessageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTVC.xib; sourceTree = "<group>"; };
 		CE7CF5412B07A29D00FEA332 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CE8ACB822B08A01800DCFBD9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEA709C22ACBF3A60071F930 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CEA709C42ACBF5420071F930 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEA709C82ACC00860071F930 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
@@ -58,6 +59,8 @@
 		CE015BAE2ABD785600E560D1 = {
 			isa = PBXGroup;
 			children = (
+				CE8ACB832B08A1CB00DCFBD9 /* Screenshots */,
+				CE8ACB822B08A01800DCFBD9 /* README.md */,
 				CE015BB92ABD785600E560D1 /* X */,
 				CE015BB82ABD785600E560D1 /* Products */,
 			);
@@ -111,6 +114,13 @@
 				CE7CF5412B07A29D00FEA332 /* TabBarController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		CE8ACB832B08A1CB00DCFBD9 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		CEA709C12ACBF3830071F930 /* Model */ = {

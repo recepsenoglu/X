@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zM0-bC-Nty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2687.7862595419847" y="384.50704225352115"/>
+            <point key="canvasLocation" x="3526" y="56"/>
         </scene>
         <!--Home-->
         <scene sceneID="ePj-PO-hnd">
@@ -172,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0M-2f-ami" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2687.7862595419847" y="-249.29577464788733"/>
+            <point key="canvasLocation" x="2677" y="-139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VIk-RU-rnU">
@@ -286,7 +286,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="338.66665649414062" height="317.33334350585938"/>
-        <image name="ProfilePhoto" width="533.33331298828125" height="355.33334350585938"/>
+        <image name="ProfilePhoto" width="200" height="200"/>
         <image name="bell" catalog="system" width="125" height="128"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="envelope" catalog="system" width="128" height="85"/>
