@@ -14,7 +14,7 @@ This is a clone of the Twitter app UI, made with **Swift** & **Storyboard**. It'
 
 Home...... | Messages | Preview
 ------------ | ------------- | -------------
-<img src="./Screenshots/Home.png" height="852" width="393"> | <img src="./Screenshots/Messages.png" height="852" width="393"> | <img src="./Screenshots/Preview.gif" height="852" width="393">
+<img src="./Screenshots/Home.png" width="250"> | <img src="./Screenshots/Messages.png" width="250"> | <img src="./Screenshots/Preview.gif" width="250">
 
 
 ## Contributing
